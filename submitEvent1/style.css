@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --firstColor: #3C493F;
+    --secondColor: #7E8D85;
+    --thirdColor: #7E8D85;
+    --fourthColor: #7E8D85;
+    --fifthColor: #A2E3C4;
+}
+
+body {
+    background: var(--firstColor);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    color: var(--fifthColor);
+    border: 1px solid var(--secondColor);
+    border-radius: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gridChild {
+    border: 1px solid #fff;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.input {
+    margin-bottom: 0.5em;
+    display: grid;
+}
+
+.input label {
+    font-size: 18px;
+}
+
+.input input[type="text"]{
+    width: 100%;
+    padding: 0.3em;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+button {
+    padding: 0.5em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+    margin-top: .3em;
+    color: #fff;
+    background: #232456;
+    font-weight: 500;
+    cursor: pointer;
+}
